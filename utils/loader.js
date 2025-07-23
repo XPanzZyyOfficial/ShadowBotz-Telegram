@@ -1,4 +1,3 @@
-const ErrorFile = require("../XFile.js");
 const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
@@ -34,11 +33,12 @@ if (!message || !message.message) return;
 let senderId = message.senderId || "Unknown";
 
 console.log(chalk.hex("#4caf50")(`々 New Message`));
-console.log(`╭─═─═─═─═─═─═─═─═─═─═─═─═─[ ≪ ]
-║ ${chalk.hex("#ffeb3b")('𖣂 Pesan :')} ${message.message}
-║ ${chalk.hex("#6cace4")('𖣂 Sender ID:')} ${senderId}
-║ ${chalk.hex("#48D1CC")('丝 Date :')} ${new Date().toLocaleString()}
-╰─═─═─═─═─═─═─═─═─═─═─═─═─[ ≫ ]\n`)
+console.log(
+`╭─═─═─═─═─═─═─═─═─═─═─═─═─[ ≪ ] \n` +
+`║ ${chalk.hex("#ffeb3b")('𖣂 Pesan :')} ${message.message} \n` +
+`│ ${chalk.hex("#6cace4")('𖣂 Sender ID:')} ${senderId} \n` +
+`║ ${chalk.hex("#48D1CC")('丝 Date :')} ${new Date().toLocaleString()} \n` +
+`╰─═─═─═─═─═─═─═─═─═─═─═─═─[ ≫ ]\n`)
 );
 console.log();
 
