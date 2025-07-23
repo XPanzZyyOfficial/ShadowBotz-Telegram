@@ -7,12 +7,15 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "latest",
+    "axios": "^1.6.8",
     "chalk": "^4.1.2",
     "input": "latest",
     "node-fetch": "^2.6.7",
     "os": "^0.1.2",
     "perf_hooks": "latest",
-    "telegram": "latest"
+    "telegram": "latest",
+    "ytdl-core": "^4.11.2",
+    "yt-search": "^2.10.6",
+    "google-translate-open-api": "^1.0.5"
   }
 }
